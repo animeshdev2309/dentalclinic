@@ -21,7 +21,7 @@ const BUSINESS_CONFIG = {
 
     /* Optional image logo. Leave "" to keep the inline SVG mark.
        Accepts an absolute URL or a relative path like "assets/images/logo.png". */
-    logo: "",
+    logo: "https://iili.io/n8A4tou.png",
 
     /* Optional favicon URL. Leave "" for the browser default. */
     favicon: "",
