@@ -28,8 +28,8 @@ const BUSINESS_CONFIG = {
 
     /* Hero background. Provide a URL or path. srcset/sizes optional. */
     heroImage: "imgs/heroimg.png",
-    heroImageSrcset: " ",
-    heroImageSizes: " ",
+    heroImageSrcset: "",
+    heroImageSizes: "",
 
     /* ---- Contact ---- */
     contact: {
