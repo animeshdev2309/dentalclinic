@@ -27,8 +27,8 @@ const BUSINESS_CONFIG = {
     favicon: "",
 
     /* Hero background. Provide a URL or path. srcset/sizes optional. */
-    heroImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=1280",
-    heroImageSrcset: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=640 640w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=960 960w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=1280 1280w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=1600 1600w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=2000 2000w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=2400 2400w",
+    heroImage: "imgs/heroimg.png?auto=format&fit=crop&q=75&w=1280",
+    heroImageSrcset: "imgs/heroimg.png?auto=format&fit=crop&q=75&w=640 640w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=960 960w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=1280 1280w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=1600 1600w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=2000 2000w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=2400 2400w",
     heroImageSizes: "100vw",
 
     /* ---- Contact ---- */
