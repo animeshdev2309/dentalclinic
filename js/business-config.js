@@ -27,9 +27,9 @@ const BUSINESS_CONFIG = {
     favicon: "",
 
     /* Hero background. Provide a URL or path. srcset/sizes optional. */
-    heroImage: "imgs/heroimg.png?auto=format&fit=crop&q=75&w=1280",
-    heroImageSrcset: "imgs/heroimg.png?auto=format&fit=crop&q=75&w=640 640w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=960 960w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=1280 1280w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=1600 1600w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=2000 2000w, imgs/heroimg.png?auto=format&fit=crop&q=75&w=2400 2400w",
-    heroImageSizes: "100vw",
+    heroImage: "imgs/heroimg.png",
+    heroImageSrcset: " ",
+    heroImageSizes: " ",
 
     /* ---- Contact ---- */
     contact: {
