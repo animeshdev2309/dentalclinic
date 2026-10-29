@@ -1,0 +1,812 @@
+
+## `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<title>Dr. Raj's Multispeciality Dental Clinic — Saraidhela, Dhanbad</title>
+<meta name="description" content="Dr. Raj's Multispeciality Dental Clinic in Saraidhela, Dhanbad. Attentive, patient-focused dental care since 2012. Call +91 70331 84080 or request an appointment on WhatsApp.">
+<!-- SEO TODO (BUG-03): the production domain and a social-preview image are not
+     known yet, so no canonical / og:url / og:image / JSON-LD "url" is emitted
+     (a wrong URL is worse than none). Once both exist, add:
+       <link rel="canonical" href="https://YOUR-DOMAIN/">
+       <meta property="og:url" content="https://YOUR-DOMAIN/">
+       <meta property="og:image" content="https://YOUR-DOMAIN/assets/og-image.jpg">  (1200x630)
+       and  "url": "https://YOUR-DOMAIN/"  inside the JSON-LD block below.
+     Then switch twitter:card back to summary_large_image. -->
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Dr. Raj's Multispeciality Dental Clinic">
+<meta property="og:title" content="Dr. Raj's Multispeciality Dental Clinic — Saraidhela, Dhanbad">
+<meta property="og:description" content="Attentive, patient-focused dental care in Saraidhela, Dhanbad. Call +91 70331 84080.">
+<meta name="twitter:card" content="summary">
+
+<meta name="theme-color" content="#F1E9DD">
+<meta name="color-scheme" content="light">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Instrument+Sans:wght@400..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Instrument+Sans:wght@400..700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Instrument+Sans:wght@400..700&display=swap"></noscript>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Dr. Raj's Multispeciality Dental Clinic",
+  "telephone": "+917033184080",
+  "email": "dr.riturajbds@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Saraidhela, Opposite New Madan Medical, Near Steel Gate",
+    "addressLocality": "Dhanbad",
+    "addressRegion": "Jharkhand",
+    "postalCode": "828127",
+    "addressCountry": "IN"
+  },
+  "foundingDate": "2012",
+  "priceRange": "₹₹"
+}
+</script>
+
+<!-- Head watchdog: adds `js` class so reveal-animated content can be hidden
+     safely, and removes it again if main.js never finishes (failsafe). This
+     must run synchronously in <head> before the body renders. -->
+<script>
+(function () {
+  var root = document.documentElement;
+  root.classList.add('js');
+  window.addEventListener('error', function () {
+    if (!root.classList.contains('js-ready')) root.classList.remove('js');
+  });
+})();
+</script>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<div class="scroll-progress" aria-hidden="true"><span id="scrollBar"></span></div>
+
+<!-- ============================================================
+     HEADER — Floating pill navigation
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <div class="header-inner">
+
+      <nav class="navbar" aria-label="Primary">
+
+        <a class="brand" href="#top" data-id="top" aria-label="Dr. Raj's Multispeciality Dental Clinic — home">
+          <span class="brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M7 31V22.5a13 13 0 0 1 26 0V31" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+              <circle cx="20" cy="22" r="2.6" fill="currentColor"/>
+            </svg>
+          </span>
+          <span class="brand__text">
+            <span class="brand__name">Dr. Raj's</span>
+            <span class="brand__sub">Multispeciality Dental Clinic</span>
+          </span>
+        </a>
+
+        <ul class="nav-list" role="list">
+
+          <li class="nav-list__item">
+            <a class="nav-item is-active" href="#top" data-id="top" aria-current="location">
+              <span class="nav-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3.25 10.6 12 3.4l8.75 7.2"/>
+                  <path d="M5.6 9.3V19.4a1.1 1.1 0 0 0 1.1 1.1h10.6a1.1 1.1 0 0 0 1.1-1.1V9.3"/>
+                  <path d="M9.7 20.5v-4.9a.9.9 0 0 1 .9-.9h2.8a.9.9 0 0 1 .9.9v4.9"/>
+                </svg>
+              </span>
+              <span class="nav-item__label"><span>Home</span></span>
+            </a>
+          </li>
+
+          <li class="nav-list__item">
+            <a class="nav-item" href="#services" data-id="services">
+              <span class="nav-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 4c-1.5 0-2.5 1.5-2.5 3.5 0 1.5.5 3 1 4.5.5 1.5.5 3 .5 4.5 0 1.5.5 3 2 3s2-1.5 2-3 .5-2.5 2-2.5 2 1 2 2.5.5 3 2 3 2-1.5 2-3 0-3 .5-4.5 1-3 1-4.5c0-2-1-3.5-2.5-3.5-.5 0-1 .2-1.5.5L12 7l-3.5-2.5C8 4.2 7.5 4 7 4Z"/>
+                </svg>
+              </span>
+              <span class="nav-item__label"><span>Services</span></span>
+            </a>
+          </li>
+
+          <li class="nav-list__item">
+            <a class="nav-item" href="#results" data-id="results">
+              <span class="nav-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3.5" y="4" width="17" height="16" rx="2"/>
+                  <path d="M12 4v16"/>
+                  <path d="M6 10h3M6 14h3M15 10h3M15 14h3"/>
+                </svg>
+              </span>
+              <span class="nav-item__label"><span>Results</span></span>
+            </a>
+          </li>
+
+          <li class="nav-list__item">
+            <a class="nav-item" href="#dentist" data-id="dentist">
+              <span class="nav-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="8" r="3.5"/>
+                  <path d="M4.9 20.4a7.1 7.1 0 0 1 14.2 0"/>
+                </svg>
+              </span>
+              <span class="nav-item__label"><span>Dentist</span></span>
+            </a>
+          </li>
+
+          <li class="nav-list__item">
+            <a class="nav-item" href="#journey" data-id="journey">
+              <span class="nav-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3.5" y="5" width="17" height="15" rx="2.5"/>
+                  <path d="M3.5 9.5h17M8 3v4M16 3v4"/>
+                  <path d="M8 13h2M12 13h2M16 13h.01M8 16.5h2M12 16.5h2"/>
+                </svg>
+              </span>
+              <span class="nav-item__label"><span>Visit</span></span>
+            </a>
+          </li>
+
+          <li class="nav-list__item">
+            <a class="nav-item" href="#visit" data-id="visit">
+              <span class="nav-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12Z"/>
+                  <circle cx="12" cy="9" r="2.6"/>
+                </svg>
+              </span>
+              <span class="nav-item__label"><span>Find Us</span></span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="nav-cta">
+          <a class="nav-wa" data-wa target="_blank" rel="noopener noreferrer" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings." aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.54 3.68 1.48 5.2L2 22l5.1-1.62a9.86 9.86 0 0 0 4.94 1.32h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.47 2 12.04 2Zm5.77 14.02c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.78-1.1-4.53-3.94-4.67-4.13-.13-.19-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.34.7-.34.18 0 .36 0 .51.01.17.01.39-.06.6.46.24.56.8 1.94.87 2.08.07.14.11.3.02.49-.09.19-.13.3-.27.47-.13.16-.28.36-.4.48-.13.14-.27.28-.12.54.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.1 1.3.26.14.42.11.57-.07.15-.18.66-.77.83-1.03.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.14.44.2.5.31.07.11.07.65-.17 1.33Z" fill="currentColor"/></svg>
+          </a>
+          <button class="btn btn-solid btn-sm" type="button" data-book>Book</button>
+        </div>
+
+        <button class="nav-toggle" type="button" id="navToggle"
+                aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+          <span class="nav-toggle__box" aria-hidden="true">
+            <span class="nav-toggle__line"></span>
+            <span class="nav-toggle__line"></span>
+          </span>
+        </button>
+
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__clip">
+          <div class="mobile-menu__panel">
+            <div class="mobile-menu__inner">
+
+              <ul class="mobile-list" role="list">
+
+                <li>
+                  <a class="mobile-link" href="#top" data-id="top">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3.25 10.6 12 3.4l8.75 7.2"/>
+                        <path d="M5.6 9.3V19.4a1.1 1.1 0 0 0 1.1 1.1h10.6a1.1 1.1 0 0 0 1.1-1.1V9.3"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">Home</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="mobile-link" href="#experience" data-id="experience">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="M8.5 12.5 11 15l4.5-5.5"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">The experience</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="mobile-link" href="#services" data-id="services">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M7 4c-1.5 0-2.5 1.5-2.5 3.5 0 1.5.5 3 1 4.5.5 1.5.5 3 .5 4.5 0 1.5.5 3 2 3s2-1.5 2-3 .5-2.5 2-2.5 2 1 2 2.5.5 3 2 3 2-1.5 2-3 0-3 .5-4.5 1-3 1-4.5c0-2-1-3.5-2.5-3.5-.5 0-1 .2-1.5.5L12 7l-3.5-2.5C8 4.2 7.5 4 7 4Z"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">Services</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="mobile-link" href="#results" data-id="results">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3.5" y="4" width="17" height="16" rx="2"/>
+                        <path d="M12 4v16"/>
+                        <path d="M6 10h3M6 14h3M15 10h3M15 14h3"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">Before &amp; After</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="mobile-link" href="#dentist" data-id="dentist">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="8" r="3.5"/>
+                        <path d="M4.9 20.4a7.1 7.1 0 0 1 14.2 0"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">Dr. Ritu Raj</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="mobile-link" href="#journey" data-id="journey">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3.5" y="5" width="17" height="15" rx="2.5"/>
+                        <path d="M3.5 9.5h17M8 3v4M16 3v4"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">Your Visit</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="mobile-link" href="#faq" data-id="faq">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="M9.4 9a2.7 2.7 0 0 1 5.2 1c0 1.8-2.6 2.2-2.6 4"/>
+                        <circle cx="12" cy="17.4" r=".6" fill="currentColor"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">Questions</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="mobile-link" href="#visit" data-id="visit">
+                    <span class="mobile-link__icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 21s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12Z"/>
+                        <circle cx="12" cy="9" r="2.6"/>
+                      </svg>
+                    </span>
+                    <span class="mobile-link__label">Find Us</span>
+                    <span class="mobile-link__arrow" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+                    </span>
+                  </a>
+                </li>
+
+              </ul>
+
+              <div class="mobile-actions">
+                <button class="btn btn-solid" type="button" data-book>Request an appointment</button>
+                <a class="btn btn-outline" data-wa target="_blank" rel="noopener noreferrer" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings.">WhatsApp the clinic</a>
+                <a class="btn btn-quiet" data-tel href="tel:+917033184080">Call +91 70331 84080</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" id="top" aria-labelledby="heroTitle">
+  <div class="hero-media" aria-hidden="true">
+    <img class="hero-img" data-hero-img
+      src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=1280"
+      srcset="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=640 640w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=960 960w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=1280 1280w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=1600 1600w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=2000 2000w, https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75&w=2400 2400w"
+      sizes="100vw" alt="" width="2400" height="1600" fetchpriority="high" decoding="async">
+    <div class="hero-scrim"></div>
+  </div>
+
+  <div class="hero-rail" aria-hidden="true">
+    <span>Saraidhela · Dhanbad · Since 2012</span>
+    <i class="rail-line"></i>
+    <span>Precision · Comfort · Care</span>
+  </div>
+
+  <div class="wrap hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        Dr. Raj's Multispeciality Dental Clinic · Saraidhela, Dhanbad
+      </p>
+
+      <h1 class="hero-title" id="heroTitle">
+        <span class="line"><span>The future</span></span>
+        <span class="line"><span>of your</span></span>
+        <span class="line"><span class="ital">smile</span></span>
+      </h1>
+
+      <p class="hero-lede">
+        Attentive, patient-focused dental care in a comfortable and
+        welcoming environment — from routine check-ups to advanced
+        restorative and cosmetic treatments.
+      </p>
+
+      <div class="hero-actions">
+        <button class="btn btn-solid btn-lg" type="button" data-book>
+          Request an appointment
+          <svg class="ico-arrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+        </button>
+
+        <a class="btn btn-outline btn-lg" data-wa target="_blank" rel="noopener" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings.">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.54 3.68 1.48 5.2L2 22l5.1-1.62a9.86 9.86 0 0 0 4.94 1.32h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.47 2 12.04 2Zm5.77 14.02c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.78-1.1-4.53-3.94-4.67-4.13-.13-.19-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.34.7-.34.18 0 .36 0 .51.01.17.01.39-.06.6.46.24.56.8 1.94.87 2.08.07.14.11.3.02.49-.09.19-.13.3-.27.47-.13.16-.28.36-.4.48-.13.14-.27.28-.12.54.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.1 1.3.26.14.42.11.57-.07.15-.18.66-.77.83-1.03.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.14.44.2.5.31.07.11.07.65-.17 1.33Z" fill="currentColor"/></svg>
+          WhatsApp
+        </a>
+
+        <a class="btn btn-quiet btn-lg" data-tel href="tel:+917033184080">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h2.2c.5 0 .9.3 1 .8l.9 3.3c.1.4 0 .8-.4 1L8.6 9.5a12.4 12.4 0 0 0 5.9 5.9l1.4-1.7c.2-.3.6-.4 1-.3l3.3.9c.5.1.8.5.8 1V18c0 1.7-1.3 3-3 3C10.3 21 3 13.7 3 6c0-1.7 1.3-3 3-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          Call
+        </a>
+      </div>
+
+      <p class="hero-note">
+        Enquiries go directly to the clinic. No payment is taken on this website.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-foot wrap">
+    <a class="scroll-cue" href="#experience">
+      <span class="sc-text">Scroll</span>
+      <span class="sc-line" aria-hidden="true"><i></i></span>
+    </a>
+    <span class="hero-fig">Serving Dhanbad since 2012</span>
+  </div>
+</section>
+
+<section class="quickfacts" aria-label="At a glance">
+  <div class="wrap quickfacts-row">
+    <div class="qf"><span class="qf-k">Established</span><span class="qf-v">2012</span></div>
+    <div class="qf" data-rating hidden><span class="qf-k">Google rating</span><span class="qf-v" data-field="rating"></span></div>
+    <div class="qf"><span class="qf-k">Consultation</span><span class="qf-v">₹200</span></div>
+    <div class="qf"><span class="qf-k">Location</span><span class="qf-v">Saraidhela, Dhanbad</span></div>
+  </div>
+</section>
+
+<section class="section experience" id="experience" aria-labelledby="expTitle">
+  <div class="wrap exp-grid">
+    <div class="exp-head">
+      <p class="kicker reveal">02 — The smile experience</p>
+      <h2 class="h2 reveal" id="expTitle">Dentistry that <em>pays attention</em>.</h2>
+      <p class="lede reveal">A dental visit is not a transaction. It is a conversation about what you feel, what you want, and what is actually happening inside your mouth. Everything here is arranged around that idea.</p>
+    </div>
+    <ol class="exp-list" role="list">
+      <li class="exp-item reveal"><span class="exp-num">01</span><div class="exp-body"><h3>Comfort comes first</h3><p>Time to talk before anything is examined. Clear explanations before anything is done. You should never have to guess what is happening in your own mouth.</p></div></li>
+      <li class="exp-item reveal"><span class="exp-num">02</span><div class="exp-body"><h3>Plans built around you</h3><p>No two mouths are the same, and no treatment plan should be either. Options are discussed openly, including what each one involves and what happens if you wait.</p></div></li>
+      <li class="exp-item reveal"><span class="exp-num">03</span><div class="exp-body"><h3>Understanding, not fear</h3><p>Most dental anxiety comes from not knowing. We explain what we see, what it means, and what the sensible next step is — in language that is actually yours.</p></div></li>
+      <li class="exp-item reveal"><span class="exp-num">04</span><div class="exp-body"><h3>A practice, not a pit stop</h3><p>Oral health is a long relationship. The aim is fewer emergencies over years, not more treatments over months.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section services on-dark" id="services" aria-labelledby="svcTitle">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker reveal">03 — Services</p>
+      <h2 class="h2 reveal" id="svcTitle">An index of <em>care</em>.</h2>
+      <p class="sec-lede reveal">A multispeciality scope means most concerns can be handled in one place. Select a category to see what it involves — then ask the clinic directly to confirm availability.</p>
+    </header>
+
+    <div class="svc-index" data-accordion="single">
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p1" id="svc-b1"><span class="svc-num">01</span><span class="svc-name">General Dentistry</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p1"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&h=375&q=75" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Routine check-ups, examinations, preventive care, toothache assessment and dental fillings — the everyday work that keeps bigger problems from building up.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="General Dentistry">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p2" id="svc-b2"><span class="svc-num">02</span><span class="svc-name">Cleaning &amp; Scaling</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p2"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Professional cleaning and scaling along with practical guidance on brushing, flossing and interdental care — the routine work that quietly keeps bigger treatments unnecessary.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Cleaning & Scaling">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p3" id="svc-b3"><span class="svc-num">03</span><span class="svc-name">Fillings &amp; Restorations</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p3"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75&sat=-10" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Repair of decayed or damaged teeth using modern restorative materials, with attention to fit, bite and how the tooth will behave years from now.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Fillings & Restorations">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p4" id="svc-b4"><span class="svc-num">04</span><span class="svc-name">Root Canal Treatment</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p4"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=500&h=375&q=75" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Treatment for infected or inflamed teeth, including microscope-assisted root canal treatment — planned to relieve discomfort and preserve the natural tooth wherever that remains the sensible option.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Root Canal Treatment">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p5" id="svc-b5"><span class="svc-num">05</span><span class="svc-name">Crowns &amp; Bridges</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p5"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&h=375&q=75&sat=-5" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Custom-made restorations that rebuild strength, shape and function after significant damage or tooth loss.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Crowns & Bridges">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p6" id="svc-b6"><span class="svc-num">06</span><span class="svc-name">Dental Veneers</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p6"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75&sat=5" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Thin, custom-made shells bonded to the front of teeth to refine shape, shade and alignment. Everything is discussed and agreed with you first — including what is realistic and what is not.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Dental Veneers">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p7" id="svc-b7"><span class="svc-num">07</span><span class="svc-name">Cosmetic Dentistry</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p7"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&h=375&q=75" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Treatment planning focused on the appearance of your teeth and gums — including smile improvement treatments and cosmetic corrections, always in conversation with you.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Cosmetic Dentistry">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p8" id="svc-b8"><span class="svc-num">08</span><span class="svc-name">Dental Implants</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p8"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=500&h=375&q=75&sat=5" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Replacement of missing teeth with implant-supported restorations, following a full assessment of bone health, general health and suitability.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Dental Implants">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p9" id="svc-b9"><span class="svc-num">09</span><span class="svc-name">Orthodontics &amp; Aligners</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p9"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&h=375&q=75&sat=-15" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Assessment of alignment and bite, including discussion of braces and clear-aligner options — and what each one actually involves day to day. Please confirm aligner availability with the clinic.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Orthodontics & Aligners">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p10" id="svc-b10"><span class="svc-num">10</span><span class="svc-name">Oral Surgery</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p10"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75&sat=-20" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Oral and maxillofacial surgical procedures, including wisdom tooth extraction — planned carefully, with clear explanation of what the procedure involves and what recovery looks like.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Oral Surgery">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p11" id="svc-b11"><span class="svc-num">11</span><span class="svc-name">Gum Care</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p11"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=500&h=375&q=75" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Assessment and management of gum health — from early inflammation to ongoing periodontal care and monitoring.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Gum Care">Enquire about this service</button></div></div></div></div>
+      </div>
+      <div class="acc-item svc-item">
+        <h3 class="acc-heading"><button class="acc-btn svc-btn" type="button" aria-expanded="false" aria-controls="svc-p12" id="svc-b12"><span class="svc-num">12</span><span class="svc-name">Dentures</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="svc-p12"><div class="acc-inner"><div class="svc-body"><img class="svc-img" src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=500&h=375&q=75" alt="" width="500" height="375" loading="lazy" decoding="async"><div class="svc-text"><p>Removable prosthetics planned for comfort, fit and appearance, with follow-up adjustments as your mouth settles.</p><button class="btn btn-outline btn-sm" type="button" data-book data-service="Dentures">Enquire about this service</button></div></div></div></div>
+      </div>
+    </div>
+
+    <p class="disclaimer">Service descriptions are a guide to what a multispeciality practice typically offers. Availability, suitability and cost are confirmed by the clinic during consultation — this is not a diagnosis or a treatment recommendation. Please confirm with the clinic before travelling.</p>
+  </div>
+</section>
+
+<section class="section results" id="results" aria-labelledby="resultsTitle">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker reveal">04 — Before &amp; after</p>
+      <h2 class="h2 reveal" id="resultsTitle">Before and after, <em>side by side</em>.</h2>
+      <p class="sec-lede reveal">Drag the handle to compare. The images below are illustrative samples only — they are not photographs of the clinic's patients or results. Real patient results will be published only with written consent from each patient.</p>
+    </header>
+    <div class="ba-grid">
+      <article class="ba reveal">
+        <div class="ba-media" style="--pos:50%">
+          <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&h=675&q=75&sat=-25" alt="Illustrative sample image, colour version (not a real patient)" width="900" height="675" loading="lazy" decoding="async">
+          <div class="ba-before"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&h=675&q=75&sat=-55&blur=1" alt="Illustrative sample image, blurred and desaturated version (not a real patient)" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="ba-tags"><span class="ba-tag">Before</span><span class="ba-tag">After</span></div>
+          <span class="ba-sample">Illustrative sample</span>
+          <input class="ba-input" type="range" min="0" max="100" value="50" step="1" aria-label="Compare before and after, illustrative sample for cosmetic dentistry">
+          <div class="ba-handle" aria-hidden="true"></div>
+        </div>
+        <div class="ba-caption"><strong>Cosmetic dentistry</strong><span>Illustrative sample · not a real patient</span></div>
+      </article>
+      <article class="ba reveal">
+        <div class="ba-media" style="--pos:50%">
+          <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&h=675&q=75&sat=-20" alt="Illustrative sample image, colour version (not a real patient)" width="900" height="675" loading="lazy" decoding="async">
+          <div class="ba-before"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=900&h=675&q=75&sat=-45&blur=1" alt="Illustrative sample image, blurred and desaturated version (not a real patient)" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="ba-tags"><span class="ba-tag">Before</span><span class="ba-tag">After</span></div>
+          <span class="ba-sample">Illustrative sample</span>
+          <input class="ba-input" type="range" min="0" max="100" value="50" step="1" aria-label="Compare before and after, illustrative sample for root canal and crown">
+          <div class="ba-handle" aria-hidden="true"></div>
+        </div>
+        <div class="ba-caption"><strong>Root canal &amp; crown</strong><span>Illustrative sample · not a real patient</span></div>
+      </article>
+      <article class="ba reveal">
+        <div class="ba-media" style="--pos:50%">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&h=675&q=75" alt="Illustrative sample image, colour version (not a real patient)" width="900" height="675" loading="lazy" decoding="async">
+          <div class="ba-before"><img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&h=675&q=75&sat=-45&blur=1" alt="Illustrative sample image, blurred and desaturated version (not a real patient)" width="900" height="675" loading="lazy" decoding="async"></div>
+          <div class="ba-tags"><span class="ba-tag">Before</span><span class="ba-tag">After</span></div>
+          <span class="ba-sample">Illustrative sample</span>
+          <input class="ba-input" type="range" min="0" max="100" value="50" step="1" aria-label="Compare before and after, illustrative sample for dental implants">
+          <div class="ba-handle" aria-hidden="true"></div>
+        </div>
+        <div class="ba-caption"><strong>Dental implants</strong><span>Illustrative sample · not a real patient</span></div>
+      </article>
+    </div>
+    <p class="ba-note">Patient results are published only with explicit consent. If you would like to see photographs of actual cases discussed at the clinic, please ask at your consultation.</p>
+  </div>
+</section>
+
+<section class="section dentist" id="dentist" aria-labelledby="dentistTitle">
+  <div class="wrap dentist-grid">
+    <figure class="portrait reveal">
+      <div class="portrait-frame">
+        <svg class="portrait-ph" viewBox="0 0 120 150" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><circle cx="60" cy="56" r="22"/><path d="M18 142a42 42 0 0 1 84 0"/></svg>
+        <span class="portrait-note">Portrait to be added</span>
+      </div>
+      <figcaption><span class="pc-name">Dr. Ritu Raj</span><span class="pc-role">Founder &amp; Lead Dentist</span></figcaption>
+    </figure>
+    <div class="dentist-copy">
+      <p class="kicker reveal">05 — The dentist</p>
+      <h2 class="h2 reveal" id="dentistTitle">Meet <em>Dr. Ritu Raj</em>.</h2>
+      <p class="lede reveal">Dr. Ritu Raj leads a practice built on a simple position: that good dentistry is mostly listening, explaining, and then doing only what is genuinely needed.</p>
+      <p class="reveal">Consultations are unhurried. Options are laid out honestly. And you will always know what is being recommended, why, and what the alternatives are — before anything begins.</p>
+      <dl class="credentials reveal">
+        <div class="cred"><dt>Qualifications</dt><dd data-cred="qualifications">BDS — full qualifications to be confirmed with the clinic</dd></div>
+        <div class="cred"><dt>Special interests</dt><dd data-cred="interests">Root canal treatment, dental implants, cosmetic dentistry</dd></div>
+        <div class="cred"><dt>Memberships</dt><dd data-cred="memberships">To be confirmed</dd></div>
+        <div class="cred"><dt>Languages</dt><dd data-cred="languages">Hindi, English — to be confirmed</dd></div>
+      </dl>
+      <p class="fineprint reveal">Registration details and additional credentials are published only once confirmed by the clinic. Nothing on this page is a claim until it is confirmed.</p>
+      <div class="actions reveal">
+        <button class="btn btn-solid" type="button" data-book>Request a consultation</button>
+        <a class="btn btn-quiet" data-wa target="_blank" rel="noopener" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings.">Ask a question on WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section journey" id="journey" aria-labelledby="journeyTitle">
+  <div class="wrap">
+    <header class="sec-head sec-head--center">
+      <p class="kicker reveal">06 — Your visit</p>
+      <h2 class="h2 reveal" id="journeyTitle">What happens, <em>in order</em>.</h2>
+      <p class="sec-lede reveal">No surprises, no guesswork. This is the shape of a first visit.</p>
+    </header>
+    <ol class="journey-track" role="list">
+      <li class="jstep reveal"><span class="jnode" aria-hidden="true">01</span><h3>Get in touch</h3><p>Send a WhatsApp message, call +91 70331 84080, or use the enquiry form. Tell us roughly what is bothering you — or that nothing is, and you would just like a check-up.</p></li>
+      <li class="jstep reveal"><span class="jnode" aria-hidden="true">02</span><h3>Discuss your needs</h3><p>The clinic replies with available timings and anything useful to know before you arrive. This is also the moment to ask about costs.</p></li>
+      <li class="jstep reveal"><span class="jnode" aria-hidden="true">03</span><h3>Visit the clinic</h3><p>An examination, a conversation about what is visible, and — where appropriate — imaging. You leave understanding your own mouth a little better.</p></li>
+      <li class="jstep reveal"><span class="jnode" aria-hidden="true">04</span><h3>Choose your options</h3><p>Treatment options are laid out with their trade-offs. You decide what happens next, and when. Nothing is scheduled without your agreement.</p></li>
+    </ol>
+    <div class="journey-cta reveal"><button class="btn btn-solid btn-lg" type="button" data-book>Start with an enquiry</button></div>
+  </div>
+</section>
+
+<section class="section clinic" id="clinic" aria-labelledby="clinicTitle">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker reveal">07 — The clinic</p>
+      <h2 class="h2 reveal" id="clinicTitle">The room you <em>walk into</em>.</h2>
+      <p class="sec-lede reveal">A calm, quiet space in Saraidhela, Dhanbad. Every effort is made to make the room feel less clinical than expected — photographs will be updated with real clinic images once supplied.</p>
+    </header>
+    <div class="clinic-mosaic">
+      <figure class="tile tile--a reveal"><div class="tile-media"><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=1400&q=80" alt="Representative image of a dental clinic reception area" width="1400" height="900" loading="lazy" decoding="async"><span class="tile-label">Representative image</span></div><figcaption>Reception <em>Clinic photo to be added</em></figcaption></figure>
+      <figure class="tile tile--b reveal"><div class="tile-media"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=1400&q=80" alt="Representative image of a dental treatment room" width="1400" height="900" loading="lazy" decoding="async"><span class="tile-label">Representative image</span></div><figcaption>Treatment room <em>Clinic photo to be added</em></figcaption></figure>
+      <figure class="tile tile--c reveal"><div class="tile-media"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=900&q=80" alt="Representative image of dental equipment" width="900" height="675" loading="lazy" decoding="async"><span class="tile-label">Representative image</span></div><figcaption>Equipment <em>Clinic photo to be added</em></figcaption></figure>
+      <figure class="tile tile--d reveal"><div class="tile-media"><img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=900&q=80" alt="Representative image of a clinic waiting area" width="900" height="675" loading="lazy" decoding="async"><span class="tile-label">Representative image</span></div><figcaption>Waiting area <em>Clinic photo to be added</em></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section notes" id="notes" aria-labelledby="notesTitle">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker reveal">08 — Care notes</p>
+      <h2 class="h2 reveal" id="notesTitle">Three things worth <em>knowing</em>.</h2>
+      <p class="sec-lede reveal">General education, not diagnosis. If anything here sounds like your situation, the right next step is a conversation with the clinic.</p>
+    </header>
+    <div class="notes-grid">
+      <article class="note reveal"><span class="note-idx">i.</span><h3>Enamel does not grow back</h3><p>Enamel is the hardest tissue in the human body — and the only one that does not regenerate. Almost all preventive dentistry is really about protecting what you already have.</p></article>
+      <article class="note reveal"><span class="note-idx">ii.</span><h3>Small problems are easier to treat</h3><p>A cavity found early is usually a filling. Found late, it can become a root canal and a crown. Regular check-ups exist to keep problems small and options open.</p></article>
+      <article class="note reveal"><span class="note-idx">iii.</span><h3>Gums are quiet</h3><p>Gum disease often progresses without pain. Bleeding while brushing is a signal worth mentioning at your next visit — not something to brush past.</p></article>
+    </div>
+    <p class="notes-foot reveal">Patient stories will be published here once real patients have given their approval. No reviews, ratings or testimonials have been invented for this page.</p>
+  </div>
+</section>
+
+<section class="section faq" id="faq" aria-labelledby="faqTitle">
+  <div class="wrap faq-grid">
+    <div class="faq-head">
+      <p class="kicker reveal">09 — Questions</p>
+      <h2 class="h2 reveal" id="faqTitle">Asked, and <em>answered</em>.</h2>
+      <p class="lede reveal">If your question isn't here, the fastest answer comes straight from the clinic.</p>
+      <div class="reveal"><a class="btn btn-outline" data-wa target="_blank" rel="noopener" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings.">Ask on WhatsApp</a></div>
+    </div>
+    <div class="faq-list" data-accordion="single">
+      <div class="acc-item">
+        <h3 class="acc-heading"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p1" id="faq-b1"><span>How do I book an appointment?</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="faq-p1"><div class="acc-inner"><p>Call the clinic on +91 70331 84080, message on WhatsApp, or use the appointment enquiry form on this site. The form prepares a WhatsApp message for you — your appointment is confirmed only once the clinic replies.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3 class="acc-heading"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p2" id="faq-b2"><span>What are the clinic's opening hours?</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="faq-p2"><div class="acc-inner"><p>Monday to Saturday: 11:00 AM – 2:00 PM, and 5:00 PM – 8:00 PM. Sunday: 11:00 AM – 2:00 PM, and 4:30 PM – 8:00 PM. Please confirm the current schedule with the clinic before travelling.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3 class="acc-heading"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p3" id="faq-b3"><span>What is the consultation fee?</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="faq-p3"><div class="acc-inner"><p>The consultation fee is publicly listed as ₹200. Treatment prices vary depending on the procedure — please ask the clinic directly for current pricing.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3 class="acc-heading"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p4" id="faq-b4"><span>What should I bring to my first visit?</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="faq-p4"><div class="acc-inner"><p>Any previous dental records or X-rays you already have, a list of medications you currently take, and details of any allergies. If you have dental insurance, bring the relevant information with you.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3 class="acc-heading"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p5" id="faq-b5"><span>How can I contact the clinic?</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="faq-p5"><div class="acc-inner"><p>Phone: +91 70331 84080 · Email: dr.riturajbds@gmail.com. WhatsApp and call buttons are on every page, and on mobile they are always in the bar at the bottom of the screen.</p></div></div>
+      </div>
+      <div class="acc-item">
+        <h3 class="acc-heading"><button class="acc-btn" type="button" aria-expanded="false" aria-controls="faq-p6" id="faq-b6"><span>I'm in dental discomfort — what should I do?</span><span class="acc-icon" aria-hidden="true"></span></button></h3>
+        <div class="acc-panel" id="faq-p6"><div class="acc-inner"><p>Contact the clinic by phone as soon as you can. This website cannot assess symptoms. If you have significant swelling, uncontrolled bleeding, or difficulty breathing or swallowing, seek urgent medical care immediately.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section visit" id="visit" aria-labelledby="visitTitle">
+  <div class="wrap">
+    <header class="sec-head">
+      <p class="kicker reveal">10 — Find us</p>
+      <h2 class="h2 reveal" id="visitTitle">Come <em>see us</em>.</h2>
+    </header>
+    <div class="visit-grid">
+      <div class="visit-info reveal">
+        <dl class="visit-dl">
+          <div class="vd"><dt>Clinic</dt><dd>Dr. Raj's Multispeciality Dental Clinic</dd></div>
+          <div class="vd"><dt>Address</dt><dd data-field="address">Saraidhela, Opposite New Madan Medical,
+Near Steel Gate, Dhanbad,
+Jharkhand 828127, India</dd></div>
+          <div class="vd"><dt>Opening hours</dt><dd data-field="hours">Mon–Sat: 11:00 AM – 2:00 PM · 5:00 PM – 8:00 PM
+Sunday: 11:00 AM – 2:00 PM · 4:30 PM – 8:00 PM</dd></div>
+          <div class="vd"><dt>Phone</dt><dd data-field="phone">+91 70331 84080</dd></div>
+          <div class="vd"><dt>Email</dt><dd><a href="mailto:dr.riturajbds@gmail.com" data-field="email">dr.riturajbds@gmail.com</a></dd></div>
+          <div class="vd"><dt>Consultation</dt><dd data-field="consultation">₹200 · to be confirmed with the clinic</dd></div>
+        </dl>
+        <div class="visit-actions">
+          <button class="btn btn-solid" type="button" data-book>Request an appointment</button>
+          <a class="btn btn-outline" data-wa target="_blank" rel="noopener" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings.">WhatsApp</a>
+          <a class="btn btn-quiet" data-tel href="tel:+917033184080">Call the clinic</a>
+        </div>
+        <a class="directions-link" href="https://maps.app.goo.gl/926QzrJQJLn52RQp9" target="_blank" rel="noopener noreferrer" data-directions>Get directions<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></a>
+      </div>
+      <div class="reveal">
+        <div class="map-panel map-panel--map">
+          <iframe title="Google map showing the location of Dr. Raj's Multispeciality Dental Clinic, Saraidhela, Dhanbad" src="https://maps.google.com/maps?q=Dr%20Raj%27s%20Multispeciality%20Dental%20Clinic%2C%20Saraidhela%2C%20Dhanbad%2C%20Jharkhand%20828127&z=15&hl=en&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <a class="directions-link" href="https://maps.app.goo.gl/926QzrJQJLn52RQp9" target="_blank" rel="noopener noreferrer" data-directions>Open in Google Maps<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h11M10.5 5l5 5-5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <div class="footer-top">
+      <p class="footer-eyebrow">Dr. Raj's Multispeciality Dental Clinic · Saraidhela, Dhanbad</p>
+      <h2 class="footer-word">The future<br><em>of your smile</em>.</h2>
+    </div>
+    <div class="footer-grid">
+      <div class="fg-col fg-col--wide">
+        <p class="footer-lede">Attentive, patient-focused dental care in Saraidhela, Dhanbad — serving the community since 2012.</p>
+        <div class="footer-actions">
+          <button class="btn btn-solid btn-sm" type="button" data-book>Book appointment</button>
+          <a class="btn btn-outline btn-sm" data-wa target="_blank" rel="noopener" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings.">WhatsApp</a>
+          <a class="btn btn-quiet btn-sm" data-tel href="tel:+917033184080">Call</a>
+        </div>
+      </div>
+      <nav class="fg-col" aria-label="Footer navigation">
+        <h3 class="fg-title">Explore</h3>
+        <ul role="list">
+          <li><a href="#experience">The experience</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#results">Before &amp; after</a></li>
+          <li><a href="#dentist">Dr. Ritu Raj</a></li>
+          <li><a href="#journey">Your visit</a></li>
+          <li><a href="#visit">Find us</a></li>
+          <li><a href="#faq">Questions</a></li>
+        </ul>
+      </nav>
+      <div class="fg-col">
+        <h3 class="fg-title">Visit</h3>
+        <ul role="list">
+          <li data-field="address">Saraidhela, Opposite New Madan Medical, Near Steel Gate, Dhanbad, Jharkhand 828127</li>
+          <li data-field="hours">Mon–Sat: 11:00 AM – 2:00 PM · 5:00 PM – 8:00 PM
+Sunday: 11:00 AM – 2:00 PM · 4:30 PM – 8:00 PM</li>
+          <li data-field="phone">+91 70331 84080</li>
+          <li><a href="mailto:dr.riturajbds@gmail.com" data-field="email">dr.riturajbds@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>&copy; <span id="year">2025</span> Dr. Raj's Multispeciality Dental Clinic. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="https://www.facebook.com/doctor.rituraj" target="_blank" rel="noopener noreferrer" data-social="facebook">Facebook</a>
+        <a href="#" data-privacy hidden>Privacy policy</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-bar" aria-label="Quick contact">
+  <a class="mbar-item" data-wa target="_blank" rel="noopener" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings.">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.54 3.68 1.48 5.2L2 22l5.1-1.62a9.86 9.86 0 0 0 4.94 1.32h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.47 2 12.04 2Zm5.77 14.02c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.78-1.1-4.53-3.94-4.67-4.13-.13-.19-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.34.7-.34.18 0 .36 0 .51.01.17.01.39-.06.6.46.24.56.8 1.94.87 2.08.07.14.11.3.02.49-.09.19-.13.3-.27.47-.13.16-.28.36-.4.48-.13.14-.27.28-.12.54.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.1 1.3.26.14.42.11.57-.07.15-.18.66-.77.83-1.03.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.14.44.2.5.31.07.11.07.65-.17 1.33Z" fill="currentColor"/></svg>
+    <span>WhatsApp</span>
+  </a>
+  <button class="mbar-item mbar-item--primary" type="button" data-book>
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M3.5 9.5h17M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    <span>Book</span>
+  </button>
+  <a class="mbar-item" data-tel href="tel:+917033184080">
+    <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3h2.2c.5 0 .9.3 1 .8l.9 3.3c.1.4 0 .8-.4 1L8.6 9.5a12.4 12.4 0 0 0 5.9 5.9l1.4-1.7c.2-.3.6-.4 1-.3l3.3.9c.5.1.8.5.8 1V18c0 1.7-1.3 3-3 3C10.3 21 3 13.7 3 6c0-1.7 1.3-3 3-3Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    <span>Call now</span>
+  </a>
+</nav>
+
+<a class="wa-float" data-wa target="_blank" rel="noopener noreferrer" href="https://wa.me/917033184080?text=Hello%20Dr.%20Raj's%20Multispeciality%20Dental%20Clinic%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment.%20Please%20share%20your%20available%20timings." aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.54 3.68 1.48 5.2L2 22l5.1-1.62a9.86 9.86 0 0 0 4.94 1.32h.01c5.43 0 9.84-4.4 9.84-9.84C21.89 6.4 17.47 2 12.04 2Zm5.77 14.02c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.78-1.1-4.53-3.94-4.67-4.13-.13-.19-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.34.7-.34.18 0 .36 0 .51.01.17.01.39-.06.6.46.24.56.8 1.94.87 2.08.07.14.11.3.02.49-.09.19-.13.3-.27.47-.13.16-.28.36-.4.48-.13.14-.27.28-.12.54.15.27.68 1.12 1.46 1.82 1 .89 1.84 1.17 2.1 1.3.26.14.42.11.57-.07.15-.18.66-.77.83-1.03.18-.27.36-.22.6-.13.24.09 1.53.72 1.79.85.27.14.44.2.5.31.07.11.07.65-.17 1.33Z" fill="currentColor"/></svg>
+  <span class="wa-tip" aria-hidden="true">Chat on WhatsApp</span>
+</a>
+
+<button class="to-top" id="toTop" type="button" aria-label="Scroll back to top">
+  <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16V4M5 9l5-5 5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+</button>
+
+<div class="modal" id="bookingModal" aria-hidden="true">
+  <div class="modal-backdrop" data-close-modal></div>
+  <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="bookingTitle" aria-describedby="bookingDesc">
+    <button class="modal-close" type="button" data-close-modal aria-label="Close appointment form">
+      <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <div class="modal-body" id="modalBody">
+      <p class="kicker">Appointment enquiry</p>
+      <h2 id="bookingTitle">Tell us a little about your visit.</h2>
+      <p class="modal-lede" id="bookingDesc">This form prepares a WhatsApp message to the clinic. Your appointment is confirmed only after the clinic replies — nothing is booked automatically.</p>
+      <form id="bookingForm" novalidate>
+        <div class="field"><label for="f-name">Full name <span class="req" aria-hidden="true">*</span></label><input type="text" id="f-name" name="name" autocomplete="name" required aria-describedby="e-name" placeholder="Your name"><p class="err" id="e-name" role="alert"></p></div>
+        <div class="field"><label for="f-phone">Phone number <span class="req" aria-hidden="true">*</span></label><input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" required aria-describedby="e-phone" placeholder="With country code"><p class="err" id="e-phone" role="alert"></p></div>
+        <div class="field-row">
+          <div class="field"><label for="f-date">Preferred date</label><input type="date" id="f-date" name="date" aria-describedby="e-date"><p class="err" id="e-date" role="alert"></p></div>
+          <div class="field"><label for="f-time">Preferred time</label><select id="f-time" name="time" aria-describedby="e-time"><option value="">Any time</option><option value="Daytime (11:00 AM – 2:00 PM)">Daytime (11:00 AM – 2:00 PM)</option><option value="Evening (5:00 PM – 8:00 PM)" data-days="1,2,3,4,5,6">Evening, Mon–Sat (5:00 PM – 8:00 PM)</option><option value="Sunday evening (4:30 PM – 8:00 PM)" data-days="0">Sunday evening (4:30 PM – 8:00 PM)</option></select><p class="err" id="e-time" role="alert"></p></div>
+        </div>
+        <div class="field"><label for="f-service">Service of interest</label><select id="f-service" name="service"><option value="">Not sure yet</option><option value="General Dentistry">General Dentistry</option><option value="Cleaning & Scaling">Cleaning &amp; Scaling</option><option value="Fillings & Restorations">Fillings &amp; Restorations</option><option value="Root Canal Treatment">Root Canal Treatment</option><option value="Crowns & Bridges">Crowns &amp; Bridges</option><option value="Dental Veneers">Dental Veneers</option><option value="Cosmetic Dentistry">Cosmetic Dentistry</option><option value="Dental Implants">Dental Implants</option><option value="Orthodontics & Aligners">Orthodontics &amp; Aligners</option><option value="Oral Surgery">Oral Surgery</option><option value="Gum Care">Gum Care</option><option value="Dentures">Dentures</option></select></div>
+        <div class="field"><label for="f-msg">Anything we should know? <span class="opt">(optional)</span></label><textarea id="f-msg" name="message" rows="3" maxlength="400" placeholder="A short note — please avoid sharing detailed medical history here."></textarea></div>
+        <p class="form-note">Please do not include sensitive medical details in this form. It is delivered through WhatsApp, which is not a secure medical channel.</p>
+        <div class="form-actions">
+          <button class="btn btn-solid btn-lg" type="submit" id="submitBtn"><span class="btn-label">Send enquiry via WhatsApp</span></button>
+          <button class="btn btn-quiet" type="button" data-close-modal>Cancel</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-success" id="modalSuccess" hidden>
+      <div class="success-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="1.4" stroke-opacity=".35"/><path d="M15 24.5l6 6 12-13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <h2>Your enquiry is ready.</h2>
+      <p>WhatsApp should have opened with your details already written out. <strong>Press send in WhatsApp</strong> to deliver it to the clinic. Your appointment is confirmed only once the clinic replies.</p>
+      <div class="success-actions">
+        <a class="btn btn-solid" id="reopenWa" href="https://wa.me/917033184080" target="_blank" rel="noopener noreferrer">Open WhatsApp again</a>
+        <button class="btn btn-quiet" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/business-config.js" defer></script>
+<script src="js/promotion-config.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
