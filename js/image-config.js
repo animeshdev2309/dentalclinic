@@ -40,11 +40,11 @@ const IMAGE_CONFIG = {
      the built-in tooth icon. Use a square image (a transparent PNG/SVG/WebP
      is best), about 120 × 120 px so it stays sharp on phones.
      "" = keep the built-in tooth icon.                                       */
-  logo: "",
+  logo: "assets/logo.png",
 
   /* ---- Favicon (the small icon in the browser tab) ------------------------
      Square, e.g. 64 × 64 px PNG. "" = browser default.                        */
-  favicon: "",
+  favicon: "assets/fabicon.png",
 
   /* ---- Hero (large picture behind the headline at the top) ----------------
      Fills the whole top section and is cropped to fit, from the CENTRE:
@@ -58,7 +58,7 @@ const IMAGE_CONFIG = {
   /* ---- Doctor (section "05 — The dentist") ---------------------------------
      Portrait frame, 4:5 (taller than wide). Use an 800 × 1000 px portrait with
      the face in the upper half. "" = the "Portrait to be added" placeholder.   */
-  doctor: "",
+  doctor: "assets/doctor.png",
 
   /* ---- Services (the 12 treatments in the "Services" list) -----------------
      Each picture shows in a 4:3 frame (about 340 × 255 px on desktop) when the
