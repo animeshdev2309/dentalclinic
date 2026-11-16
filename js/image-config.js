@@ -65,13 +65,13 @@ const IMAGE_CONFIG = {
      treatment is opened. They are in the SAME ORDER as the page – the name
      after // tells you which one is which. Keep the commas.                  */
   services: [
-    "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&h=375&q=75",   // 1  General Dentistry
-    "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75",   // 2  Cleaning & Scaling
-    "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75&sat=-10",   // 3  Fillings & Restorations
-    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=500&h=375&q=75",   // 4  Root Canal Treatment
-    "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&h=375&q=75&sat=-5",   // 5  Crowns & Bridges
-    "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75&sat=5",   // 6  Dental Veneers
-    "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&h=375&q=75",   // 7  Cosmetic Dentistry
+    "assets/services/general.png",   // 1  General Dentistry
+    "assets/services/cleaning.png",   // 2  Cleaning & Scaling
+    "assets/services/filling.png",   // 3  Fillings & Restorations
+    "assets/services/root.png",   // 4  Root Canal Treatment
+    "assets/services/crowns.png",   // 5  Crowns & Bridges
+    "assets/services/dental.png",   // 6  Dental Veneers
+    "assets/services/cosmetic.png",   // 7  Cosmetic Dentistry
     "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=500&h=375&q=75&sat=5",   // 8  Dental Implants
     "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&h=375&q=75&sat=-15",   // 9  Orthodontics & Aligners
     "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75&sat=-20",   // 10  Oral Surgery
