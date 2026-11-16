@@ -53,7 +53,7 @@ const IMAGE_CONFIG = {
      1920 px wide, with the main subject in the centre. The left side is
      covered by a light fade behind the text, so keep it uncluttered.
      (Unsplash links automatically get responsive sizes.)                      */
-  hero: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=75",
+  hero: "assets/heroimg.png",
 
   /* ---- Doctor (section "05 — The dentist") ---------------------------------
      Portrait frame, 4:5 (taller than wide). Use an 800 × 1000 px portrait with
