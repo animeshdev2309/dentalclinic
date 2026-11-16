@@ -72,11 +72,11 @@ const IMAGE_CONFIG = {
     "assets/services/crowns.png",   // 5  Crowns & Bridges
     "assets/services/dental.png",   // 6  Dental Veneers
     "assets/services/cosmetic.png",   // 7  Cosmetic Dentistry
-    "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=500&h=375&q=75&sat=5",   // 8  Dental Implants
-    "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=500&h=375&q=75&sat=-15",   // 9  Orthodontics & Aligners
-    "https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=500&h=375&q=75&sat=-20",   // 10  Oral Surgery
-    "https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=500&h=375&q=75",   // 11  Gum Care
-    "https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=500&h=375&q=75",   // 12  Dentures
+    "assets/services/implant.png",   // 8  Dental Implants
+    "assets/services/orthodontics.png",   // 9  Orthodontics & Aligners
+    "assets/services/oral.png",   // 10  Oral Surgery
+    "assets/services/preventive.png",   // 11  Gum Care
+    "assets/services/teeth.png",   // 12  Dentures
   ],
 
   /* ---- Gallery (the 4 pictures in the "Our clinic" mosaic) -----------------
